@@ -13,6 +13,8 @@ requires 'Catalyst::Runtime' => '5.80032';
 requires 'Catalyst::Plugin::ConfigLoader';
 requires 'Catalyst::Plugin::Static::Simple';
 requires 'Catalyst::Action::RenderView';
+requires 'Catalyst::View::JSON';
+
 requires 'Moose';
 requires 'MongoDB';
 requires 'Text::CSV';

@@ -113,7 +113,7 @@ sub buscar {
     my $collection = $self->db_collection;
     die 'you need to set uf' unless $self->has_uf;
 
-    my $cursor = $collection->query( {} );
+    my $cursor = $collection->query( { uf => $self->uf } );
 
     return $cursor;
 }

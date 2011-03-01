@@ -8,7 +8,7 @@ Este Ã© um serviÃ§o simples para oferecer informaÃ§Ãµes sobre latitudes 
 </p>
 
 <p>
-O projeto Ã© mantido em um repositÃ³rio do github: <a href="http://www.github.com/maluco">http://www.github.com/maluco/</a> e pelo grupo <A href="http://www.opendatabr.org/">OpenData-BR</a>
+O projeto Ã© mantido em um repositÃ³rio do github: <a href="http://www.github.com/maluco/llcb">http://www.github.com/maluco/llcb</a> e pelo grupo <A href="http://www.opendatabr.org/">OpenData-BR</a>
 </p>
 
 <h3>Consultas via API</h3>
@@ -18,19 +18,11 @@ Para efetuar uma consultia via API, basta acessar o endereÃ§o:
 </p>
 
 <p>
-http://llcb.opendatbabr.org/api/<b>estado</b>/<b>cidade</b>?format=<b>json</b>
+http://llcb.opendatbabr.org/api/<b>estado/</b>
 <p>
 
 <p>
 <b>estado:</b> O codigo do estado representado por duas letras (UF).
-</p>
-
-<p>
-<b>cidade:</b> O nome da cidade, e pode ser buscado mais de uma cidade basta colocar apenas o inicio do nome da cidade, ou mesmo nao colocar nenhum nome de cidade para vir a lista de cidades de todo o estado selecionado.
-</p>
-
-<p>
-<b>?formato=:</b> O formato que deseja receber a reposta da consulta do servico, pode ser em json, xml ou csv.
 </p>
 
 <h3>Arquivo com todos os dados</h3>
