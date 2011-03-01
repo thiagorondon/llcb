@@ -1,0 +1,42 @@
+
+<h2>LLCB - Latitudes e Longitudes de cidades brasileiras</h2>
+
+<p></p>
+
+<p>
+Este Ã© um serviÃ§o simples para oferecer informaÃ§Ãµes sobre latitudes e longitudes de cidades brasileiras, aqui vocÃª pode utilizar requisiÃ§Ãµes via um serviÃ§os especifico no site, ou efetuar o download completo do arquivo.
+</p>
+
+<p>
+O projeto Ã© mantido em um repositÃ³rio do github: <a href="http://www.github.com/maluco">http://www.github.com/maluco/</a> e pelo grupo <A href="http://www.opendatabr.org/">OpenData-BR</a>
+</p>
+
+<h3>Consultas via API</h3>
+
+<p>
+Para efetuar uma consultia via API, basta acessar o endereÃ§o:
+</p>
+
+<p>
+http://llcb.opendatbabr.org/api/<b>estado</b>/<b>cidade</b>?format=<b>json</b>
+<p>
+
+<p>
+<b>estado:</b> O codigo do estado representado por duas letras (UF).
+</p>
+
+<p>
+<b>cidade:</b> O nome da cidade, e pode ser buscado mais de uma cidade basta colocar apenas o inicio do nome da cidade, ou mesmo nao colocar nenhum nome de cidade para vir a lista de cidades de todo o estado selecionado.
+</p>
+
+<p>
+<b>?formato=:</b> O formato que deseja receber a reposta da consulta do servico, pode ser em json, xml ou csv.
+</p>
+
+<h3>Arquivo com todos os dados</h3>
+
+<p>Alem do servico disponibilizamos todos os dados em unico arquivo, para facilitar a utilizacao deles</p>
+
+<p>Ultima versao: 1 de marco de 2011 - <a href="/static/rawdata/1mar2011.csv">Download</a></p>
+
+

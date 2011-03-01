@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Sao Paulo Perl Mongers" />
+	<meta name="description" content="OpenData-BR" />
+	<meta name="keywords" content="opendata, transparencia, governo, dados aberto" />
+	<link rel="stylesheet" href="/static/css/opendatabr.css" type="text/css" /> 
+	<title>LLCB - Latitudes e Longitudes de Cidades Brasileiras</title>
+ </head>
+<body bgcolor="#FFFFFF">
+
+<div id="content"> 
+	<div id="title"> 
+		<div id="titlealign"> 
+			<h1>OpenData-BR</h1> 
+		</div> 
+	</div> 
+									
+<div id="panelcontainer"> 
+</div> 
+
+<div id="maincontainer"> 
+<div id="main"> 
+
+[% content %]
+
+</div>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
+
+
