@@ -3,6 +3,12 @@
 
 <p></p>
 
+<p align="center">
+<img src="/static/images/banner-llcb.png">
+</p>
+
+<h3></h3>
+
 <p>
 Este Ã© um serviÃ§o simples para oferecer informaÃ§Ãµes sobre latitudes e longitudes de cidades brasileiras, aqui vocÃª pode utilizar requisiÃ§Ãµes via um serviÃ§os especifico no site, ou efetuar o download completo do arquivo.
 </p>
@@ -32,10 +38,10 @@ http://llcb.opendatabbr.org/api/<b>estado/</b>
 http://llcb.opendatabr.org/rdf/<b>estado/</b>
 </p>
 
-<h3>Arquivo com todos os dados</h3>
+<h3>Rawdata</h3>
 
-<p>Alem do servico disponibilizamos todos os dados em unico arquivo, para facilitar a utilizacao deles</p>
+<p>Alem do servico disponibilizamos todos os dados em único arquivo, para facilitar a utilizacao deles</p>
 
-<p>Ultima versao: 1 de marco de 2011 - <a href="/static/rawdata/1mar2011.csv">Download</a></p>
+<p>Última versao: 1 de marco de 2011 - <a href="/static/rawdata/1mar2011.csv">Download</a></p>
 
 
