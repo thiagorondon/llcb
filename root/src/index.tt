@@ -18,11 +18,18 @@ Para efetuar uma consultia via API, basta acessar o endereÃ§o:
 </p>
 
 <p>
-http://llcb.opendatbabr.org/api/<b>estado/</b>
+http://llcb.opendatabbr.org/api/<b>estado/</b>
 <p>
 
 <p>
 <b>estado:</b> O codigo do estado representado por duas letras (UF).
+</p>
+
+
+<h3>RDF</h3>
+
+<p>
+http://llcb.opendatabr.org/rdf/<b>estado/</b>
 </p>
 
 <h3>Arquivo com todos os dados</h3>
