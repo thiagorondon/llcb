@@ -10,14 +10,50 @@
 <h3></h3>
 
 <p>
-Este Ã© um serviÃ§o simples para oferecer informaÃ§Ãµes sobre latitudes e longitudes de cidades brasileiras, aqui vocÃª pode utilizar requisiÃ§Ãµes via um serviÃ§os especifico no site, ou efetuar o download completo do arquivo.
+Este Ã© um serviÃ§o independente para oferecer informaÃ§Ãµes sobre latitudes e longitudes de cidades brasileiras, aqui vocÃª pode utilizar requisiÃ§Ãµes via um serviÃ§os especifico no site, ou efetuar o download completo do arquivo.
 </p>
 
 <p>
-O projeto Ã© mantido em um repositÃ³rio do github: <a href="http://www.github.com/maluco/llcb">http://www.github.com/maluco/llcb</a> e pelo grupo <A href="http://www.opendatabr.org/">OpenData-BR</a>
+O projeto Ã© mantido em um repositÃ³io do github: <a href="http://www.github.com/maluco/llcb">http://www.github.com/maluco/llcb</a> e pelo grupo <A href="http://www.opendatabr.org/">OpenData-BR</a>
 </p>
 
-<h3>Consultas via API</h3>
+<h3>Web</h3>
+
+<p>Selecione abaixo os dados da cidade que deseja consultar.</p>
+
+<form name="api" action="">
+
+<table><tr><td width="100">Estado: 
+</td><td>
+<div id="estados">
+<select id="estado" name="estado">
+<option value=""></option>
+[% FOREACH item IN ['AC','AL','AM','AP','BA','CE','DF','ES','GO','MA','MG','MT','PA','PE','PI','RJ','RN','RO','RR','RS','SC','SE','SP','TO' ] %]
+<option value="[% item %]">[% item %]</option>
+[% END %]
+</select>
+</div>
+</td></tr><tr><td>
+
+Cidade:
+</td><td>
+
+<div id="cidades">
+	<select id="cidade" name="cidade">
+	</select>
+</div>
+</td></tr><tr><td valign="top">
+
+Dados:
+</td><td>
+
+<div id="cidade_view"></div>
+</td></tr></table>
+
+</form>
+
+
+<h3>API</h3>
 
 <p>
 Para efetuar uma consultia via API, basta acessar o endereÃ§o:
@@ -40,8 +76,8 @@ http://llcb.opendatabr.org/rdf/<b>estado/</b>
 
 <h3>Rawdata</h3>
 
-<p>Alem do servico disponibilizamos todos os dados em único arquivo, para facilitar a utilizacao deles</p>
+<p>Alem do servico disponibilizamos todos os dados em Ãºnico arquivo, para facilitar a utilizacao deles</p>
 
-<p>Última versao: 1 de marco de 2011 - <a href="/static/rawdata/1mar2011.csv">Download</a></p>
+<p>Ãltima versao: 1 de marco de 2011 - <a href="/static/rawdata/1mar2011.csv">Download</a></p>
 
 

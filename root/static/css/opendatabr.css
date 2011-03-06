@@ -96,11 +96,10 @@ body {
     font-size: 0.8em;
 }
 
-#main p {
+#main p,table {
     line-height: 1.2em;
     margin-top: 10px;
     margin: 0 0 1em 10%;
-
 }
 
 #main img {

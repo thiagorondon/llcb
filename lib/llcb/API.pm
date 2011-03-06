@@ -60,6 +60,12 @@ has uf => (
     predicate => 'has_uf'
 );
 
+has codigo => (
+    is        => 'ro',
+    isa       => 'Str',
+    predicate => 'has_codigo'
+);
+
 has cidade => (
     is        => 'ro',
     isa       => 'Str',
@@ -94,12 +100,15 @@ sub update {
     $collection->drop;
 
     while ( my $row = $self->csv_handle->getline( $self->csv_fh ) ) {
+        my $codigo = $row->[4];
+        $codigo =~ s/^.*codmun=//;
         $collection->insert(
             {
                 uf        => $row->[0],
                 cidade    => $row->[1],
                 latitude  => $row->[2],
-                longitude => $row->[3]
+                longitude => $row->[3],
+                codigo    => $codigo,
             },
             { save => 1 }
         );
@@ -111,9 +120,16 @@ sub update {
 sub buscar {
     my $self       = shift;
     my $collection = $self->db_collection;
-    die 'you need to set uf' unless $self->has_uf;
+    die 'you need to set uf' unless $self->has_uf or $self->has_codigo;
 
-    my $cursor = $collection->query( { uf => $self->uf } );
+    my $cursor = $collection->query(
+        {
+            $self->has_uf
+            ? ( uf => $self->uf )
+            : ( codigo => $self->codigo )
+
+        }
+    );
 
     return $cursor;
 }

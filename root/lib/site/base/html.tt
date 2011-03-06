@@ -6,6 +6,9 @@
 	<meta name="author" content="Sao Paulo Perl Mongers" />
 	<meta name="description" content="OpenData-BR" />
 	<meta name="keywords" content="opendata, transparencia, governo, dados aberto" />
+	<script src="http://code.jquery.com/jquery-1.5.1.min.js" /></script>
+	<script src="/static/js/llcb.js" /></script>
+
 	<link rel="stylesheet" href="/static/css/opendatabr.css" type="text/css" /> 
 	<title>LLCB - Latitudes e Longitudes de Cidades Brasileiras</title>
  </head>

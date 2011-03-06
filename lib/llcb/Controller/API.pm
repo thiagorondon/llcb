@@ -11,13 +11,17 @@ sub base : Chained('/base') : PathPart('api') : CaptureArgs(0) {
 }
 
 sub uf : Chained('base') : PathPart('') : Args(1) {
-    my ( $self, $c, $uf ) = @_;
+    my ( $self, $c, $value ) = @_;
 
-    my $api = llcb::API->new( uf => $uf );
-
-    $c->stash->{llcb} = undef and $c->forward('View::JSON') and $c->detach
-      unless uc($uf) =~ /[A-Z]/;
-
+    my $api;
+    
+    if ($value =~ /^[0-9]*$/) {
+        $api = llcb::API->new( codigo => $value );
+    } else {
+        $api = llcb::API->new( uf => $value );
+        $c->stash->{llcb} = undef and $c->forward('View::JSON') and $c->detach
+            unless uc($value) =~ /[A-Z]/;
+    }
     my @data;
 
     map {
@@ -27,7 +31,8 @@ sub uf : Chained('base') : PathPart('') : Args(1) {
                 uf        => $_->{uf},
                 cidade    => $_->{cidade},
                 latitude  => $_->{latitude},
-                longitude => $_->{longitude}
+                longitude => $_->{longitude},
+                codigo    => $_->{codigo}
             }
           )
     } $api->buscar->all;
