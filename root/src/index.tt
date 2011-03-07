@@ -10,16 +10,16 @@
 <h3></h3>
 
 <p>
-Este Ã© um serviÃ§o independente para oferecer informaÃ§Ãµes sobre latitudes e longitudes de cidades brasileiras, aqui vocÃª pode utilizar requisiÃ§Ãµes via um serviÃ§os especifico no site, ou efetuar o download completo do arquivo.
+Este Ã© um serviÃ§o independente para oferecer informaÃ§Ãµes sobre latitudes e longitudes de cidades brasileiras, aqui vocÃª pode utilizar requisiÃ§Ãµes via serviÃ§os especifico no site, ou efetuar o download completo do arquivo.
 </p>
 
 <p>
 O projeto Ã© mantido em um repositÃ³io do github: <a href="http://www.github.com/maluco/llcb">http://www.github.com/maluco/llcb</a> e pelo grupo <A href="http://www.opendatabr.org/">OpenData-BR</a>
 </p>
 
-<h3>Web</h3>
+<h3>WEB</h3>
 
-<p>Selecione abaixo os dados da cidade que deseja consultar.</p>
+<p>Caso queira fazer uma consulta avulsa e pelo nosso pr&oacute;prio site, basta selecionar primeiramente o estado abaixo, aguardar para carregar a lista das cidades, e posteriormente verificar os dados relativos a esta cidade abaixo.</p>
 
 <form name="api" action="">
 
@@ -56,28 +56,41 @@ Dados:
 <h3>API</h3>
 
 <p>
-Para efetuar uma consultia via API, basta acessar o endereÃ§o:
+Esta API foi desenvolvida e disponibilizada pra facilitar alguns cen&aacute;rios onde a utiliza&ccedil;&atilde;o dos dados que estejam em nosso banco de dados sejam mais f&aacute;cil de efetuar a consulta, para acessar a API &eacute; muito simples, basta usar o endere&ccedil;o abaixo:
 </p>
 
 <p>
-http://llcb.opendatabbr.org/api/<b>estado/</b>
+http://llcb.opendatabr.org/api/<b>[estado|c&oacute;digo_ibge]/</b>
 <p>
 
+<ul>
+<li>Exemplo: <a href="http://llcb.opendatabr.org/api/MS">http://llcb.opendatabr.org/api/MS</a></li>
+</ul>
+
 <p>
-<b>estado:</b> O codigo do estado representado por duas letras (UF).
+<b>estado:</b> C&oacute;digo do estado representado por duas letras (UF).<br/>
+<b>c&oacute;digo_ibge:</b> C&oacute;digo de identifica&ccedil;&atilde;o usado pelo IBGE para a cidade.<br/>
 </p>
 
 
 <h3>RDF</h3>
 
 <p>
+Arquivos de fontes de dados baseado em informa&ccedil;&otilde;es em metadados, que podem ser utilizados por aplica&ccedil;&otilde;es de forma mais trivial, para utilizar este servi&ccedil;o basta acessar :
+</p>
+
+<p>
 http://llcb.opendatabr.org/rdf/<b>estado/</b>
 </p>
 
+<ul>
+<li>Exemplo: <a href="http://llcb.opendatabr.org/rdf/RS">http://llcb.opendatabr.org/rdf/RS</a></li>
+</ul>
+
 <h3>Rawdata</h3>
 
-<p>Alem do servico disponibilizamos todos os dados em Ãºnico arquivo, para facilitar a utilizacao deles</p>
+<p>Al&eacute;m do servi&ccedil;o disponibilizamos todos os dados em um Ãºnico arquivo, para facilitar a utiliza&ccedil;&atilde;o deles.</p>
 
-<p>Ãltima versao: 7 de marco de 2011 - <a href="/static/rawdata/7mar2011.csv">Download</a></p>
+<p>Ãltima versao: 7 de mar&ccedil;o de 2011 - <a href="/static/rawdata/7mar2011.csv">Download</a></p>
 
 
