@@ -35,7 +35,8 @@ sub uf : Chained('base') : PathPart('') : Args(1) {
           )
     } $api->buscar->all;
 
-    my $rdf = $ser->serialise(@data);
+    my $rdf = "<?xml version=\"1.0\"?>\n" . $ser->serialise(@data);
+
     $c->res->content_type('text/xml');
     $c->res->body($rdf);
 }
