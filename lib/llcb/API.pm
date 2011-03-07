@@ -128,7 +128,8 @@ sub buscar {
             ? ( uf => $self->uf )
             : ( codigo => $self->codigo )
 
-        }
+        },
+        { sort_by  => { cidade => 1 } }
     );
 
     return $cursor;
