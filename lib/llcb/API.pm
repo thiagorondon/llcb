@@ -106,8 +106,8 @@ sub update {
             {
                 uf        => $row->[0],
                 cidade    => $row->[1],
-                latitude  => $row->[2],
-                longitude => $row->[3],
+                latitude  => $row->[3],
+                longitude => $row->[2],
                 codigo    => $codigo,
             },
             { save => 1 }
