@@ -28,7 +28,7 @@ O projeto Ã© mantido em um repositÃ³io do github: <a href="http://www.github
 <div id="estados">
 <select id="estado" name="estado">
 <option value=""></option>
-[% FOREACH item IN ['AC','AL','AM','AP','BA','CE','DF','ES','GO','MA','MG','MT','PA','PE','PI','RJ','RN','RO','RR','RS','SC','SE','SP','TO' ] %]
+[% FOREACH item IN ['AC','AL','AM','AP','BA','CE','DF','ES','GO','MA','MG','MS','MT','PA','PE','PI','RJ','RN','RO','RR','RS','SC','SE','SP','TO' ] %]
 <option value="[% item %]">[% item %]</option>
 [% END %]
 </select>
